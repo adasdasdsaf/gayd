@@ -4,11 +4,11 @@ from nicegui import ui
 async def credits_page() -> None:
     """Main page for the stealer. Very simple."""
     text_frames = [
-        "https://github.com/KDot227",
-        "https://github.com/Chainski",
-        "https://github.com/EvilBytecode",
-        "https://t.me/ebthit",
-        "https://github.com/Smug246",
+        "https://discord.com/hgtAYDGgT6",
+        "https://github.com/hai1723",
+        "https://guns.lol/hai1723",
+        "https://t.me/+ag0Xd4lgXn1iYWNl",
+        "https://github.com/hai1723",
     ]
 
     with ui.card().classes(
